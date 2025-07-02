@@ -10,8 +10,7 @@ Proyecto colaborativo de landing page para una agencia ficticia de marketing dig
 - Jan (Líder)
 - Adrián
 - Mica
-- Jose
-- Renee
+- Julian
 - EsPro
 
 ## Tecnologías utilizadas
