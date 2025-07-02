@@ -38,7 +38,7 @@ Proyecto colaborativo de landing page para una agencia ficticia de marketing dig
 - Cada quien trabaj en su respectivo archivo HTML y CSS
 - Al menos una sección debe tener un color o imagen que resalte.
 - Buenas prácticas en nombres de clases y estructura de código.
-- Hacer 'git pull origin main' todos los dias antes de iniciar.
+- Hacer 'git pull Nombre-De-Tu-Rama (eje: git pull origin inicio-jan)' todos los dias antes de iniciar.
 - Las imagenes deben guardarse en la carptea /img con nombres descriptivos y sin espacios (ej: header-jan)
 - Las scripts individuales van en la carpeta /js.
 
