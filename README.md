@@ -33,7 +33,7 @@ Proyecto colaborativo de landing page para una agencia ficticia de marketing dig
 
 ## Reglas del proyecto
 - No trabajar en la rama `main`.
-- Hacer commits claros: git commit -m "Agregué la sección de servicios"
+- Hacer commits claros: git commit -m "Estoy trabajando en la seccion Inicio"
 - Hacer `pull request` y revisión antes de mezclar a `main`.
 - Seguir paleta de colores y tipografía acordadas.
 - Al menos una sección debe tener un color o imagen que resalte.
