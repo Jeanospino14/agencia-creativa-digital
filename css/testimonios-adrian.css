@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #999;
+    margin: 0;
+}
+
+.testimonial-prime{
+    
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto{
+    width: 50%;
+    padding: 20px;
+}
+
+.texto2{
+    font-family: sans-serif;
+}
+
+.cinta{
+    width: 100%;
+    height: 100px;
+    background: #FCA311;
+}
+
+.tarjetas-content{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.tarjeta{
+    height: 100%;
+}
