@@ -51,3 +51,30 @@ Proyecto colaborativo de landing page para una agencia ficticia de marketing dig
 │── README.md
 │── .gitignore
 
+
+# 📌 INSTRUCCIONES PARA INICIAR EL DÍA DE TRABAJO CON GIT.
+1. Abre tu terminal o VSCode.
+
+2. Entra a la carpeta del proyecto:
+
+cd agencia-creativa-digital
+
+3. Asegúrate de estar en tu rama (por ejemplo):
+
+git checkout nombre-de-tu-rama.
+
+4. Luego ejecuta:
+git pull origin nombre-de-tu-rama.
+
+
+🔁 Esto actualizará tu rama con los últimos cambios desde GitHub.
+
+🔄 ¿Por qué es importante?
+1. Para que tu código esté al día con lo que hay en GitHub.
+
+2. Evitas conflictos y errores cuando vayas a hacer push.
+
+3. Te aseguras de trabajar con la versión más reciente del proyecto.
+
+
+
