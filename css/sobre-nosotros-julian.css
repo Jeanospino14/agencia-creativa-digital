@@ -1,0 +1,40 @@
+body{
+    background-color:  #FFFFFF;
+}
+h1{
+    font-family: "Poppins",sans-serif;
+    color:  #1E1E1E;
+}
+p{
+    font-family: "Open Sans",sans-serif;
+}
+img{
+    display: inline-block;
+    width: 18% ;
+    height: 22%;
+    border: 2px solid;
+    border-radius: 12px;
+}
+.texto-sobre-nosotros{
+    display: inline-block;
+    font-size: 16px;
+    width: 35%;
+    height: 27%;
+}
+.texto-que-ofrecemos{
+    color: rgb(128, 128, 128);
+}
+a{
+    text-decoration: none;
+    color: #1E1E1E;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: 1px solid #FCA311;
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
