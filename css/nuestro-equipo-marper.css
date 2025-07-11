@@ -1,0 +1,186 @@
+/* ****** Variables ******/
+:root {
+  --font: "Inter", sans-serif;
+  --font-18: 18px;
+  --font-13: 13px;
+  --neutral-100: #ffffff;
+  --neutral-900: #4a4a4a;
+  --primary-500: #1266ea;
+  --primary-700: #0b4193;
+  --primary2-700: #0b4193;
+  --secondary-200: #aeb1ca;
+  --secondary-400: #787ca7;
+  --Fourty-2-Aplpha-25: #59afff25;
+  --secondary-2-300: #75d5ff;
+}
+
+/* ****** Reset ******/
+html {
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+a {
+  color: var(--font-color);
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  width: 200px;
+}
+
+p {
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+/* ****** UTILIDADES (clases rápidas, helpers) ***** */
+
+/* ****** LAYOUT GENERAL (estructura: header, main, footer) ***** */
+
+/* ****** COMPONENTES REUTILIZABLES (botones, tarjetas, etc.) ***** */
+
+/* ****** SECCIONES O BLOQUES ESPECÍFICOS (BEM) ***** */
+body {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.teamcontainer {
+  width: 90%;
+  max-width: 120em;
+}
+.teamcontainer_title {
+}
+.teamcontainer_text {
+}
+.teamcontainer_carrousel {
+  width: 90%;
+  max-width: 120em;
+  background-color: lawngreen;
+}
+.teamcontainer_ul {
+  width: 200%;
+  background-color: orange;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.teamcontainer_li {
+  width: 10%;
+  background-color: aqua;
+  margin: 0px 2rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.teamcontainer_li--perfil {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.teamcontainer_textos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.teamcontainer_li--usuario {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0px;
+  margin-right: 1rem;
+}
+.teamcontainer_li--puesto {
+  font-size: 0.8rem;
+  margin: 0px;
+}
+.teamcontainer_puntos {
+  width: 100%;
+  background-color: red;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.teamcontainter_puntos--punto {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: blue;
+  margin: 1em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+li {
+  list-style: none;
+}
+/* ****** Media Queries ******/
