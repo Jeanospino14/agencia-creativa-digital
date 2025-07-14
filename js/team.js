@@ -1,7 +1,7 @@
 console.log("Está funcionando JS")
 'use strict'
-const grande = document.querySelector('.teamcontainer_carrousel--container')
-const punto = document.querySelectorAll('.teamcontainer_puntos--punto')
+const grande = document.querySelector('.team__track')
+const punto = document.querySelectorAll('.team__dot')
 
 //Cuando click en cada punto
 //Saber la posición de ese punto
@@ -21,9 +21,9 @@ punto.forEach((cadaPunto, i) => {
         //aqui recoremos todos los puntos
         punto.forEach((cadaPunto, i) => {
             //quitamos la clase activo a todos los puntos
-            punto[i].classList.remove('activo')
+            punto[i].classList.remove('team__dot--activo')
         })
         //Añadir la clase activo en el punto que hemos hecho click
-        punto[i].classList.add('activo')
+        punto[i].classList.add('team__dot--activo')
     })
 })
