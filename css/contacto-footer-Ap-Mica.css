@@ -1,0 +1,47 @@
+/*Estilos para ubicar contendores */
+body{
+    background: #999;
+    margin: 0;
+    /*Agrupacion en columnas para posicionar el footer siempre abajo*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/*Footer CSS*/
+/*Contendor padre*/
+.footer {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    background: #E5E5E5;
+}
+
+/*Hijoss*/
+.footer-title {
+    width: 90%; /*Todos ocupan un 90% del ncho disponible*/
+    margin:auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.footer-content {
+    width: 90%;
+    margin: 0 auto;
+    /*Alineacion de elementos en filas */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /*Alineacion elementos entre dos extremos*/
+}
+
+.footer-end {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between; 
+}
