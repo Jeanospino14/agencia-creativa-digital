@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffff;
+    overflow: hidden;
+}
+
+
+/* NavBar*/
+.nav-container{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container ul{
+    display: flex;
+    align-items: center;
+    margin-right: 6rem;
+    gap: 2rem;
+    list-style: none;
+}
+
+.container a{
+    text-decoration: none;
+    color: #000;
+    transition: all .3s ease;
+    font-family: 'Open Son', sans-serif;
+    font-weight: 600;
+}
+
+.container a:hover{
+    background-color: #ffb948;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+
+.nav-container img{
+    width: 5%;
+    margin-left: 8rem;
+}
+
+
+/* Seccion Inicio*/
+.inicio{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-image: url('../img/img-inicio/inicio-jan.png');
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: 50rem;
+    background-size: 35rem;
+    position: relative;
+}
+
+.inicio-container{
+    margin-left: 8rem;
+}
+
+.inicio-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.8rem;
+    width: 30%;
+}
+
+.inicio-container p{
+    font-family: 'Open Son', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.inicio-container span{
+    background-color: #ffc60a;
+    padding: 0 40px 0 0;
+}
+
+.btn-container{
+    width: 10%;
+    padding: 10px 15px;
+    background-color: #FCA311;
+    margin-top: 2rem;
+    transition: .3s ease;
+}
+
+.btn-container:hover{
+    background-color: #ffad42;
+}
+
+.btn-container a{
+    color: #000;
+    text-decoration: none;
+}
+
+
