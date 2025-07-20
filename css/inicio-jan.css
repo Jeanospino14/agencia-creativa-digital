@@ -101,4 +101,47 @@ body{
     text-decoration: none;
 }
 
+.marcas-trabajadas {
+    background-color: #FCA311; 
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    height: 30vh;
+    margin-bottom: 5rem;
+}
 
+.titulo-con-lineas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.linea {
+    height: 2px;
+    background-color: white;
+    width: 60px;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 9rem;
+}
+
+.logo-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo-item i {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    color: white;
+}
