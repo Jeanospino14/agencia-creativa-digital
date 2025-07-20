@@ -1,0 +1,108 @@
+/*Estilos para ubicar contendores */
+body{
+    background: #999;
+    margin: 0;
+    /*Agrupacion en columnas para posicionar el footer siempre abajo*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+/*Footer CSS*/
+/*Contendor padre*/
+.footer {
+    font-family: "Poppins";
+    font-size :small;
+    box-sizing: border-box;
+    min-width: 100vw;
+    height: auto;
+    background: #E5E5E5;
+}
+
+/*Hijoss*/
+.footer-title {
+    width: 90%; /*Todos ocupan un 90% del ncho disponible*/
+    margin:auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+}
+
+.footer-content {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /*Alineacion de elementos en filas */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start; /*Alineacion elementos entre dos extremos*/
+    gap: 40px;
+    position: relative;
+    left: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.f-content-text{
+    width: 30%;
+    flex-grow: 2;
+    margin-right: 40px;
+    flex-basis: 350px; 
+}
+
+.f-content-link {
+    min-width: 100px;
+    flex-grow: 1;
+}
+
+.f-content-title {
+    margin-bottom: 30px;
+}
+
+.f-link {
+    margin: 10px auto;
+}
+
+.footer-end {
+    width: 90%;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    left: 20px;
+}
+
+.social-media-icons {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:has(i) {
+    min-width: 20px;
+    min-height: 20px;
+    background-color: #ddd;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
