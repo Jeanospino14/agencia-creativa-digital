@@ -696,7 +696,7 @@ html{
 }
 
 .footer__item a:hover {
-    color: #fca311;
+    text-decoration: underline;
 }
 
 .footer__end {
@@ -735,7 +735,7 @@ html{
 
 .footer__social a:hover {
     background-color: #fca311;
-    color: #fff;
+    color: #000000;
 }
 
 
