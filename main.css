@@ -294,9 +294,185 @@ html{
     text-decoration: underline;
 }
 
+
+/* Seccion Equipo*/
+:root {
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Open Sans", sans-serif;
+    --primario: #1e1e1e;
+    --secundario: #fca311;
+    --fondo: #ffffff;
+    --gris-suave: #e5e5e5;
+    --accento: #14213d;
+    --accento-purple: #ad94df;
+}
+
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    width: 100%;
+    margin-top: 20rem;
+}
+
+.team__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    width: 90%;
+}
+
+.team__titles {
+    width: 70%;
+}
+
+.team__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+.team__description {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #444;
+}
+
+.team__dots {
+    width: 20%;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.team__dot {
+    width: 2em;
+    height: 2em;
+    border: 1px solid var(--accento);
+    border-radius: 50%;
+    background-color: var(--fondo);
+    margin: 1em;
+}
+
+.team__dot--activo {
+    background-color: var(--secundario);
+    border: none;
+}
+
+.team__carousel {
+    width: 85%;
+    max-width: 120em;
+    overflow: hidden;
+}
+
+.team__track {
+    width: 200%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+
+.team__item {
+    width: 300px;
+    margin: 0 20px;
+    margin-left: 5rem;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #0002;
+    border-radius: 45px;
+    background-color: var(--fondo);
+}
+
+.team__image--wrapper {
+    width: 250px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.team__info {
+    width: 80%;
+}
+
+.team__texts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.team__name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+.team__role {
+    font-size: 0.8rem;
+    color: #3f6ac7;
+    font-weight: 600;
+    margin: 0;
+}
+
+.team__divisor {
+    margin: 1rem 0;
+}
+
+.team__divider {
+    border: none;
+    height: 1px;
+    background: var(--gris-suave);
+}
+
+.team__social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+    .team__social--icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: var(--fondo);
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.team__social--icon:hover {
+    background-color: var(--gris-suave);
+}
+
+
 /* Seccion Testimonios*/
 .testimonial-prime{
-    margin-top: 10rem;
+    margin-top: 20rem;
     font-family: "Poppins";
     box-sizing: content-box;
     width: 100%;
@@ -401,7 +577,7 @@ html{
 }
 
 .tarjeta-parrafo{
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #757474;
     margin-top: 1rem;
