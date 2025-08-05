@@ -19,40 +19,64 @@ html{
 /* NavBar */
 .nav-container {
     width: 100%;
+    background-color: white;
+}
+
+/* Estilos base */
+.nav-container {
+    box-shadow: 0 1px 5px #0000000d;
 }
 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.container ul {
+.logo {
+    width: 8%;
+}
+
+.nav-links {
     display: flex;
-    align-items: center;
-    margin-right: 6rem;
     gap: 2rem;
     list-style: none;
 }
 
-.container a {
+.nav-links li a {
     text-decoration: none;
-    color: #000;
-    transition: all 0.3s ease;
-    font-family: 'Open Sans', sans-serif;
+    color: #000000;
     font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    transition: .3s ease;
 }
 
-.container a:hover {
-    background-color: #ffb948;
-    padding: 8px;
-    border-radius: 8px;
+.nav-links a:hover{
+    background-color: #f7941d;
+    padding: 8px 8px;
+    border-radius: 9px;
 }
 
-.nav-container img {
-    width: 5%;
-    margin-left: 8rem;
+/* Icono hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
 }
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
+}
+
 
 /* Sección Inicio */
 .inicio {
@@ -60,7 +84,7 @@ html{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/img-inicio/inicio-jan.png');
+    background-image: url('img/img-main/inicio-jan.png');
     background-repeat: no-repeat;
     background-position: 50rem;
     background-size: 35rem;
@@ -249,7 +273,7 @@ html{
 .servicios h2{
     font-family: 'Poppins',sans-serif;
     font-size: 2rem;
-    padding-top: 15rem;
+    padding-top: 10rem;
     margin-left: 10rem;
 }
 
@@ -315,7 +339,7 @@ html{
     align-items: center;
     max-width: 1920px;
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 10rem;
 }
 
 .team__header {
@@ -342,6 +366,7 @@ html{
     font-family: var(--font-secondary);
     font-size: 1rem;
     margin-top: 0.5rem;
+    margin-bottom: 3rem;
     color: #444;
 }
 
@@ -382,6 +407,7 @@ html{
     transition: all 0.5s ease;
     transform: translateX(0%);
 }
+
 
 .team__item {
     width: 300px;
@@ -469,10 +495,14 @@ html{
     background-color: var(--gris-suave);
 }
 
+.team__controls{
+    display: none;
+}
+
 
 /* Seccion Testimonios*/
 .testimonial-prime{
-    margin-top: 20rem;
+    margin-top: 10rem;
     font-family: "Poppins";
     box-sizing: content-box;
     width: 100%;
@@ -548,6 +578,7 @@ html{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    position: relative;
     z-index: 2;
 }
 
@@ -738,5 +769,349 @@ html{
     background-color: #fca311;
     color: #000000;
 }
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+.menu-toggle {
+    display: flex;
+}
+
+.nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none;
+    padding: 1rem 0;
+    z-index: 999;
+    background-color: white !important;
+    box-shadow: 0 1px 5px #0007;
+}
+
+.nav-links li {
+    margin: 1rem 0;
+}
+
+.nav-links.show {
+    display: flex;
+}
+}
+
+/* Seccion Inicio*/
+@media (max-width: 768px) {
+.inicio {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2rem 1.5rem;
+    height: 100vh;
+    text-align: left;
+}
+
+.inicio-container {
+    margin-left: 0;
+    width: 100%;
+}
+
+.inicio-container h1 {
+    font-size: 2.2rem;
+    width: 100%;
+    color: #000;
+}
+
+.inicio-container p {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    color: #000;
+}
+
+.btn-container {
+    padding: 10px 15px;
+    margin-top: 1.5rem;
+}
+
+.btn-container a {
+    color: #000;
+}
+}
+
+@media (max-width: 480px) {
+.inicio {
+    background-size: 15rem;
+    padding: 2rem 1rem;
+}
+
+.inicio-container h1 {
+    font-size: 1.9rem;
+}
+
+.inicio-container p {
+    font-size: 1rem;
+}
+}
+
+/* Seccion Marcas*/
+@media (max-width: 768px) {
+.marcas-trabajadas {
+    padding: 40px 20px;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.titulo-con-lineas {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.linea {
+    width: 40px;
+}
+
+.logos {
+    gap: 3rem;
+}
+
+.logo-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 16px;
+}
+
+.logo-item i {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+}
+
+@media (max-width: 480px) {
+.logos {
+    gap: 2rem;
+}
+
+.logo-item {
+    font-size: 15px;
+}
+
+.logo-item i {
+    font-size: 1.8rem;
+}
+}
+
+
+/* Seccion Sobre Nosotros*/
+@media (max-width: 768px) {
+.informacion-sobre-nosotros {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0 1.5rem;
+}
+
+.imagen-sobre-nosotros {
+    margin: 0 auto 2rem;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.imagen-sobre-nosotros img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.texto-sobre-nosotros {
+    margin: 0;
+    width: 100%;
+}
+
+.texto-sobre-nosotros h2 {
+    font-size: 2rem;
+}
+
+.texto-sobre-nosotros p {
+    font-size: 1rem;
+}
+
+.texto-sobre-nosotros a {
+    margin-top: 2rem;
+    padding: 12px 20px;
+    font-size: 15px;
+}
+}
+
+@media (max-width: 480px) {
+.texto-sobre-nosotros h2 {
+    font-size: 1.7rem;
+}
+
+.texto-sobre-nosotros p {
+    font-size: 0.50rem;
+}
+}
+
+
+/* Seccion Servicios*/
+@media (max-width: 768px) {
+.servicios h2,
+.servicios h3 {
+    margin-left: 1rem;
+    margin-top: 0.55rem;
+    font-size: 1.5rem;
+}
+
+.servicios h3 {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.servicios-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    margin: 1rem auto;
+    max-width: 100%;
+}
+
+.servicio {
+    padding: 1.5rem 1rem;
+}
+
+.icono-servicio {
+    font-size: 2rem;
+    padding: 0.75rem;
+}
+
+.servicio h4 {
+    font-size: 1.1rem;
+}
+
+.servicio p {
+    font-size: 0.9rem;
+    max-width: 50ch;
+    margin: 0 auto 8px auto;
+}
+
+.btn-container{
+    font-size: 1rem;
+}
+}
+
+/* Seccion Equipo*/
+@media (max-width: 768px) {
+.team__carousel {
+    overflow: hidden; 
+}
+
+.team__track {
+    width: calc(300px * 3 + 40px * 2); 
+    transform: translateX(0); 
+}
+
+.team__item {
+    margin-left: 0; 
+    margin-right: 20px;
+    flex-shrink: 0; 
+}
+
+.team__controls {
+    display: flex; 
+    width: 85%;
+    max-width: 1200px;
+    margin: 1rem auto 3rem auto;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.team__controls button {
+    background-color: #FCA311;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.team__controls button:hover {
+    background-color: #ffb833;
+}
+}
+
+
+/* Seccion Testimonios*/
+@media screen and (max-width: 768px) {
+.tarjetas-carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.tarjetas-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.tarjeta {
+    min-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    height: auto;
+    box-shadow: 0 4px 10px #0002;
+    border: 1px solid #0002;
+}
+
+.testimonial-controls {
+    position: relative !important;
+    z-index: 9999 !important;
+    padding: 10px 0;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+}
+
+.testimonial-controls button {
+    position: relative !important;
+    z-index: 10000 !important;
+    background-color: #fa7d08 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    font-size: 1.5rem !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    }
+
+.text-content {
+    width: 100% !important;     
+    margin-left: 0 !important;  
+}
+
+.titulo {
+    margin-left: 2rem !important;   
+    text-align: left;            
+    max-width: 100% !important;
+}
+
+.parrafo-testimonial {
+    margin-left: 2rem !important;  
+    text-align: left;           
+    max-width: 100% !important;
+    padding-right: 1rem;        
+}
+}
+
 
 
