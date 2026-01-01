@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.servicios {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.servicios h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #1E1E1E;
+  margin-bottom: 0.5rem;
+}
+
+.servicios h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #6c6c6c;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.servicio {
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icono-servicio {
+  font-size: 2.5rem;
+  color: #14213D;
+  margin-bottom: 1rem;
+}
+
+.servicio h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #1E1E1E;
+  margin-bottom: 0.5rem;
+}
+
+.servicio p {
+  font-size: 0.95rem;
+  color: #6c6c6c;
+  margin-bottom: 1rem;
+}
+
+.servicio a {
+  color: #FCA311;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.servicio a:hover {
+  color: #14213D;
+}
